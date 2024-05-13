@@ -1,0 +1,44 @@
+//-------for strip payment gateway 
+
+//step  1. plugin 
+ "react-native-webview": "^11.0.2",
+
+
+//step 2. on routenavigation firstly import this 
+import Add_card from '../Add_card';
+import Your_card from '../Your_card';
+import Payment_savecard from '../Payment_savecard';
+
+//then use 
+
+
+<Stack.Screen name="Add_card" component={Add_card} options={{ headerShown: false}} />
+<Stack.Screen name="Your_card" component={Your_card} options={{ headerShown: false}} />
+<Stack.Screen name="Payment_savecard" component={Payment_savecard} options={{ headerShown: false}} />
+
+
+//Langauge provider 
+
+contine_txt=['Continue','Continue']
+yourCard_txt=['+ Your Card']
+payment_processing_txt=['Payment processing','']
+AddCard_txt=['Manage card']
+
+//message provider 
+information = ['Information Message','Mensaje informativo','Mensagem Informativa' ];
+
+
+//local image provider 
+  black_back:require('../../Icons/black_back.png'),
+  Mastercard_logo:require('../../Icons/Mastercard_logo.png'),
+  bin:require('../../Icons/bin.png'),
+  credit_icon:require('../../Icons/credit.png'),
+
+
+
+
+
+
+
+
+

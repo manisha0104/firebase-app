@@ -1,0 +1,62 @@
+Sample app details 
+Young Decade org Cpanel
+https://youngdecade.org:2083/
+youngiw2
+Yashwant@@2021
+
+FTP
+FTP Username: sample_apps@youngdecade.org
+FTP server: ftp.youngdecadeprojects.biz
+FTP Server ID: 103.195.185.30
+FTP & explicit FTPS port:  21
+password = M_eTizDIH8QE
+
+API URL
+https://youngdecade.org/2022/sample_app/webservice/con1.php
+
+
+
+API URL
+https://youngdecade.org/2022/sample_app/webservice/con1.php
+
+
+Google Account
+Uploadingapp.youngdecade@gmail.com
+young.decade@26
+
+
+OneSignal
+Uploadingapp.youngdecade@gmail.com
+young.decade@26
+
+
+
+firebase details
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDX2X8DdYjH9Lugl1hgn3Tyx_i_WvQH5Yo",
+  authDomain: "sampleproject-a577c.firebaseapp.com",
+  projectId: "sampleproject-a577c",
+  storageBucket: "sampleproject-a577c.appspot.com",
+  messagingSenderId: "450308384226",
+  appId: "1:450308384226:web:a3df2ecf19893f68cb45bb"
+};
+
+firebase server key AAAAaNh4peI:APA91bFkc-R-88j9-0czRpw4bQxz6luJTIxLP2XAJMiNaQKiRe5ZMGT_IKhxd-nsdcJresdPrU7xQXduO89CT7wfuLO_Og4W4iwOy03XnF4bqO5XLUOixF92iyy-4Q-2B4S8igkUHUPz
+
+sender id 
+450308384226
+
+
+OneSignal details
+app id= 6284641d-981c-4c5a-a6fe-e6552daab271
+restapi key =NGQ1ZGUxMDItODA2YS00YWMwLTliMzUtOWNjZDBmOGFiMjM1
+
+
+
+npx react-native-rename "Travel App" -b com.travelapp
+
+
+
+

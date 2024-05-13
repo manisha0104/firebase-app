@@ -1,0 +1,152 @@
+//step 1 plugins 
+"react-native-device-info": "^8.7.1",
+"react-native-image-pan-zoom": "^2.1.12",
+"react-native-image-progress": "^1.1.1",
+"react-native-progress": "^5.0.0",
+"react-native-hide-with-keyboard": "^1.2.1"
+"react-native-onesignal": "^4.4.0",
+"firebase": "^7.22.0",
+"react-native-image-picker": "^2.3.4",
+
+//step 2 routenavigation
+
+import Chat from '../ChatProvider/Chat'
+import Inbox from '../ChatProvider/Inbox'
+import ViewImage from '../ChatProvider/ViewImage'
+import ChatReport from '../ChatProvider/ChatReport'
+
+then 
+
+ <Stack.Screen name="Chat" component={Chat} options={{ headerShown: false }} />
+      <Stack.Screen name="ViewImage" component={ViewImage} options={{ headerShown: false }} />
+      <Stack.Screen name="ChatReport" component={ChatReport} options={{ headerShown: false }} />
+      <Stack.Screen name="Inbox" component={Inbox} options={{ headerShown: false }} />
+
+
+
+//step3--language provider 
+ //-----------------------chat page start -------------------------------//
+  online_txt = ['Online',]
+  offline_txt = ['Offline',]
+  type_something_txt = ['Type Something',]
+  chattextinputmessage = ['Message', '']
+  chataction = ['Action', 'Action', '']
+  chatreport = ['Report User', '']
+  chatclear = ['Clear Chat', '']
+  chatcancel = ['Cancel', '']
+  reportmessagepopup = ['Are your sure you want to ? report', '']
+  chatclearpopup = ['Are your sure you to ? clear chat', '']
+  ChooseMedia = ['Choose', ''];
+  Confirm = ["Confirm", '']
+  block_permission = ['Are you sure? you want to block this user', '']
+  unblock_permission = ['Are you sure? you want to unblock this user', '']
+  select_option_txt = ['Select Option', '']
+  report_txt = ['Report', '']
+  chats_txt = ['Chats', '']
+  block_txt = ['Block', '']
+  unblock_txt = ['Unblock', '']
+  cancel_txt = ['Cancel', '']
+  submit_txt = ['Submit', '']
+  reason_txt = ['Reason', '']
+  search_here_txt = ['Search here',]
+  you_blocked_this_user = ['You Block this person']
+  no_txt = ['No', 'No']
+  yes_txt = ['Yes', 'Yes']
+  //-----------------------------------for chat  end -------------------
+
+
+//step4 -------for message provider 
+
+
+//--------for chat start----------------//
+	emptyReportMessage = ['Please enter report reason',]
+	emptyMessage = ['Please enter message',]
+	validReportMessage = ['Please enter valid report reason',]
+	minimumReportMessage = ['Please enter minimum 3 characters',]
+//--------for chat end----------------//
+
+
+
+//step 5 
+put chatprovider folder inside your src 
+then 
+
+from where you need to navigate on chat use this function 
+and make sure no details left undefined
+
+//-------------- start-------------
+    OnUserClick = () => {
+        consolepro.consolelog('I am in user click...')
+        var other_user_details=this.state.other_user_details
+        var image = other_user_details.image;
+        var other_user_id = other_user_details.other_user_id
+        var name = other_user_details.name
+
+        if (image != null) {
+            image = config.img_url1 + image;
+        }
+        consolepro.consolelog({ image })
+        this.props.navigation.navigate('Chat', {
+            'chatdata': {
+                'other_user_id': other_user_id,
+                 'other_user_name': name,
+                'image': image,
+                blockstatus: 'no'
+            }
+        })
+    }
+
+//----------end --------------------//
+
+
+//step6 
+
+for inbox use inbox page from chatprovider/inbox 
+
+
+
+//step7 ----------"code need to put on splash autologin ,login ,signup and edit profile  in api success after set user arr in localstorage" 
+
+"1 firstly import firebaseprovider from provider "
+
+firebaseprovider.firebaseUserCreate();
+//firebaseprovider.getMyInboxAllData();
+
+
+//step8 code pn App.js
+
+componentDidMount(){
+    firebaseprovider.getAllUsers()
+}
+
+
+//step9 replace code of firebase provider  with chatprovider/firebase provider code 
+
+
+//step10 some details need to change in chatprovider/Config.js
+for this details contact to nilesh sir or pulkit sir 
+
+
+//step11 add this variable on config provider 
+demoemail='demo@mailinator.com'
+password='123456'
+                  
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

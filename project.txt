@@ -1,0 +1,30 @@
+Sample app details 
+Young Decade org Cpanel
+https://youngdecade.org:2083/
+youngiw2
+Yashwant@@2021
+
+FTP
+FTP Username: sample_apps@youngdecade.org
+FTP server: ftp.youngdecadeprojects.biz
+FTP Server ID: 103.195.185.30
+FTP & explicit FTPS port:  21
+password = M_eTizDIH8QE
+
+API URL
+https://youngdecade.org/2022/sample_app/webservice/con1.php
+
+
+
+API URL
+https://youngdecade.org/2022/sample_app/webservice/con1.php
+
+
+Google Account
+Uploadingapp.youngdecade@gmail.com
+young.decade@26
+
+
+OneSingal
+Uploadingapp.youngdecade@gmail.com
+young.decade@26
